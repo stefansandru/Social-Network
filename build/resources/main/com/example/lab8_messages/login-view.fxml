@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.lab8_messages.LoginController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20"/>
+    </padding>
+    <VBox alignment="CENTER" spacing="10">
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20"/>
+        </padding>
+        <Label text="User ID" styleClass="text"/>
+        <TextField fx:id="userIdField" promptText="Enter User ID" styleClass="text-field"/>
+        <Label text="Username" styleClass="text"/>
+        <TextField fx:id="usernameField" promptText="Enter Username"/>
+    </VBox>
+    <Button text="Login" onAction="#handleLogin"/>
+    <Label fx:id="errorText" wrapText="true" visible="false"/>
+</VBox>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.lab8_messages.MainController"
+      onMouseClicked="#handleGlobalClick">
+    <Label fx:id="notificationLabel" text="" style="-fx-background-color: #fff5ac; -fx-padding: 10; -fx-border-color: #89824f;" visible="false"/>
+    <HBox alignment="CENTER" spacing="12">
+        <Button text="Logout" onAction="#handleLogout"/>
+        <Button text="Multiple Message" onAction="#handleMultipleMessage"/>
+    </HBox>
+    <Label fx:id="welcomeUserLabel" text="Welcome" style="-fx-font-size: 24px; -fx-font-family: 'Inter';"/>
+    <HBox alignment="CENTER" spacing="20">
+        <VBox alignment="CENTER" spacing="10" styleClass="vbox">
+            <padding>
+                <Insets bottom="50"/>
+            </padding>
+            <Label text="Add new friend" style="-fx-font-size: 18px; -fx-font-family: 'Inter';"/>
+            <TextField fx:id="searchField" promptText="Search for new friends" onKeyReleased="#handleSearch"/>
+            <ListView fx:id="searchResultsListView" onMouseClicked="#handleSearchResultsClick"/>
+        </VBox>
+        <VBox alignment="CENTER" spacing="10" styleClass="vbox">
+            <padding>
+                <Insets bottom="50"/>
+            </padding>
+            <Label text="Pending" style="-fx-font-size: 18px; -fx-font-family: 'Inter';"/>
+            <ListView fx:id="pendingFriendshipsListView" onMouseClicked="#handlePendingFriendshipsClick"/>
+        </VBox>
+        <VBox alignment="CENTER" spacing="10" styleClass="vbox">
+            <padding>
+                <Insets bottom="50"/>
+            </padding>
+            <Label text="Friends List" style="-fx-font-size: 18px; -fx-font-family: 'Inter';"/>
+            <ListView fx:id="friendsListView" onMouseClicked="#handleFriendsListClick"/>
+        </VBox>
+    </HBox>
+</VBox>
