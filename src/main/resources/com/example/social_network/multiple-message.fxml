@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.social_network.MultipleMessage"
+      prefHeight="400.0" prefWidth="800.0" spacing="12">
+    <Button text="Back" onAction="#handleBackButton" />
+    <Label text="Select the users and send the message" style="-fx-font-size: 18px; -fx-font-family: 'Inter';"/>
+    <TextField fx:id="searchField" promptText="Search for new friends" onKeyReleased="#handleSearch"/>
+    <HBox>
+        <ListView fx:id="usersListView" onMouseClicked="#handleClickUsers"/>
+        <ListView fx:id="selectedUsersListView" onMouseClicked="#handleClickSelectedUsers"/>
+    </HBox>
+    <TextField fx:id="messageField" layoutX="10" layoutY="350" prefWidth="580.0"/>
+    <Button text="Send Message" onAction="#handleSendMessage"/>
+</VBox>

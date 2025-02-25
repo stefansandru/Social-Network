@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.social_network.ChatController"
+      alignment="CENTER"
+      prefHeight="400.0" prefWidth="800.0">
+    <VBox alignment="CENTER_LEFT" spacing="20" prefHeight="550.0" prefWidth="400.0">
+    <Button text="Back" onAction="#handleBackButton" />
+    <Label fx:id="chatWithLabel" text="Chat with" style="-fx-font-size: 24px; -fx-font-family: 'Inter';"/>
+    <ListView fx:id="chatListView" onMouseClicked="#handleChatListClick" prefHeight="300.0" />
+    <TextField fx:id="messageField" layoutX="10" layoutY="350" prefWidth="580.0"/>
+    <Button text="Send Message" onAction="#handleSendMessage"/>
+    </VBox>
+</HBox>

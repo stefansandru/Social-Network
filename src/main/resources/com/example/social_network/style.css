@@ -1,0 +1,64 @@
+
+.root {
+    -fx-background-color: #f2f3f4;
+}
+
+.context-menu {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+}
+
+.text-field {
+    -fx-pref-width: 200px;
+    -fx-alignment: center;
+    -fx-pref-height: 20px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-family: 'Inter Medium';
+    -fx-font-size: 17px;
+}
+
+.vbox {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 700px;
+    -fx-padding: 16px;
+}
+
+.hbox_main {
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+    -fx-padding:30px;
+}
+
+.list-cell:selected {
+    -fx-background-color: #0078d7; /* Same color as button */
+    -fx-text-fill: white;
+}
+
+.text {
+    -fx-font-size: 17px;
+    -fx-font-family: 'Inter SemiBold';
+}
+
+.button {
+    -fx-padding: 12px 20px; /* 12px top and bottom, 20px left and right */
+    -fx-margin: 10px 10px;
+    -fx-alignment: center;
+    -fx-background-color: #1E90FF; /* Blue color */
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-family: 'Inter Medium';
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.5, 0, 2); /* More transparent shadow effect */
+}
+
+.button:hover {
+    -fx-background-color: #1C86EE; /* Slightly darker blue on hover */
+}
+
+
